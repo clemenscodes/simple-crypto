@@ -1,7 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 @import './lib/variables';
+@import './components/header';
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Roboto Mono', monospace;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+main {
+  section {
+    height: 100vh;
+    background: $darkBlue;
+  }
 }
