@@ -1,0 +1,25 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  img {
+    width: 40%;
+    margin-left: 5rem;
+  }
+}
+.home-text {
+  width: 40rem;
+  h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    span {
+      color: $orange;
+      font-size: 4rem;
+    }
+  }
+  p {
+    font-size: 1.25rem;
+  }
+}
