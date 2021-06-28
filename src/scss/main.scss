@@ -3,6 +3,7 @@
 @import './lib/mixins';
 @import './components/header';
 @import './components/home';
+@import './components/blockchain';
 
 * {
   box-sizing: border-box;
@@ -21,38 +22,71 @@ a {
   text-decoration: none;
   color: white;
 }
+ul {
+  list-style: none;
+}
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  span {
+    color: $orange;
+  }
+  i {
+    margin-right: 1rem;
+    color: $orange;
+  }
+  @include for-tablet-portrait-up {
+    font-size: 2.3rem;
+  }
+}
+h2 {
+  margin: 2rem 0;
+  border-left: 2px solid $orange;
+  padding-left: 1rem;
+}
+h3 {
+  margin: 1rem 0;
+}
+p {
+  span {
+    color: $orange;
+  }
+}
 main {
-  padding: 2rem;
+  padding: 2rem 1rem;
+  @include for-desktop-up {
+    padding: 2rem 7rem;
+  }
+  @include for-big-desktop-up {
+    padding: 2rem 18rem;
+  }
   section {
     min-height: 100vh;
     background: $darkBlue;
     color: white;
     padding-top: 4rem;
-    h1 {
-      font-size: 2.3rem;
-    }
   }
 }
-#blockchain, #proof-of-work, #smart-contracts,
-#problems, #proof-of-stake, #summary {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-around;
+.grid-container {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 2rem;
+  @include for-tablet-landscape-up {
+    grid-row-gap: 5rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  @include for-desktop-up {
+    grid-column-gap: 10rem;
+    grid-row-gap: 8rem;
+  }
 }
-
-.flex-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.flex-item {
-  width: 50%;
-  div {
-    width: 70%;
-    margin-bottom: 8rem;
-    h2 {
-      margin-bottom: 2rem;
-    }
+.margin-container {
+  margin: 2rem 0;
+  @include for-tablet-landscape-up {
+    margin: 5rem 0;
+  }
+  @include for-desktop-up {
+    margin: 8rem 0;
   }
 }

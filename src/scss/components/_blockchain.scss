@@ -1,0 +1,86 @@
+.transaction-procedure {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 1rem;
+  grid-column-gap: 2rem;
+  @include for-tablet-landscape-up {
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 2rem;
+  }
+  @include for-desktop-up {
+    grid-row-gap: 8rem;
+    grid-column-gap: 10rem;
+  }
+}
+.transaction {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 20rem;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 0.25rem;
+  padding: 2rem;
+  @include for-desktop-up {
+    max-width: 30rem;
+  }
+  @include for-big-desktop-up {
+    width: 30rem;
+  }
+  h3 {
+    position: absolute;
+    top: 0;
+    left: 1.5rem;
+  }
+  i {
+    font-size: 5rem;
+    margin: 2rem 0;
+  }
+}
+.blockchain-showcase-wrapper {
+  display: none;
+  margin: 5rem 0;
+  @include for-tablet-landscape-up {
+    display: block;
+  }
+  @include for-desktop-up {
+    margin: 10rem 0;
+  }
+}
+.blockchain-showcase {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.block {
+  height: 15rem;
+  width: 15rem;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.block-head {
+  width: 100%;
+  border-bottom: 1px solid white;
+  padding: 0.5rem;
+  text-align: center;
+}
+.block-body {
+  padding: 0.5rem;
+}
+.block-footer {
+  text-align: center;
+  width: 100%;
+  border-top: 1px solid white;
+  padding: 0.5rem;
+}
+.line {
+  width: 7rem;
+  height: 1px;
+  background: white;
+}
