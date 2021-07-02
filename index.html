@@ -1,546 +1,755 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Simple Crypto</title>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="shortcut icon" href="src/assets/favicon.ico" type="image/x-icon"/>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-  <script src="src/js/main.js" defer></script>
-</head>
-<body>
-
-  <header>
-    <div class="burger-menu">
-      <img src="src/assets/menu.svg" id="burger-menu-icon" alt="burger menu icon">
-      <img src="src/assets/x.svg" id="burger-menu-icon-close" alt="close icon">
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#how-it-all-began">How it all began</a></li>
-        <li><a href="#blockchain">Blockchain</a></li>
-        <li><a href="#proof-of-work">Proof of Work</a></li>
-        <li><a href="#smart-contracts">Smart Contracts</a></li>
-        <li><a href="#problems">Problems</a></li>
-        <li><a href="#proof-of-stake">Proof of Stake</a></li>
-        <li><a href="#summary">Summary</a></li>
-      </ul>
-    </nav>
-    <div class="progress-container">
-      <div class="progress-bar" id="bar"></div>
-    </div>
-  </header>
-
-  <main>
-
-    <section id="how-it-all-began">
-
-      <div class="home-container" data-aos="fade-up">
-        <div class="home-text">
-          <h1><span>S</span>imple <span>C</span>rypto</h1>
-          <p>An Begriffen wie Kryptowährung oder Bitcoin kommt man in der heutigen Zeit kaum noch vorbei.
-            Aber was verbirgt sich eigentlich genau dahinter?
-            Wie funktionieren Kryptowährungen und was haben sie mit Umwelt und Energieverbrauch zu tun?</p>
-        </div>
-        <img src="src/assets/home.svg" alt="Home">
-      </div>
-
-      <h1><i class="fas fa-history"></i>How it all began</h1>
-
-      <div class="grid-container">
-
-        <div data-aos="fade-up">
-          <h2>Die Anfänge</h2>
-          <p>Die Begriffe Kryptowährung und Bitcoin gehen Hand in Hand. Und dies hat einen guten Grund. Bitcoin
-            war die erste digitale Währung und ist auch bis heute die mit Abstand bekannteste. Das Konzept für
-            die Währung wurde im Jahr 2008 von <span>Satoshi Nakamoto</span> entwickelt. Die ersten Ideen einer ausschließlich
-            digitalen Währung reichen jedoch weiter zurück. Im Jahr 1998 wurde von Nick Szabo bereits ein Mechanismus
-            für eine dezentrale digitale Währung, namens "bit gold" entworfen. Diese wurde jedoch nie implementiert,
-            gilt allerdings gleichhin als direkter Vorläufer der Bitcoin Architektur.
-          </p>
-        </div>
-
-        <div data-aos="fade-up">
-          <h2>Entwicklung</h2>
-          <p>Mit der Veröffentlichung des Bitcoin Netzwerkes im Jahre 2009 fiel der Startschuss für den Markt
-            der Kryptowährungen. Es sollte jedoch noch einige Jahre dauern, bis der Hype um die Währungen ein nie
-            erwartetes Hoch erreicht. Während bis 2014 nur sehr wenige Kryptowährungen existierten, so nahm der
-            Hype um Krypto ab 2015 langsam Fahrt auf. Mittlerweile gibt es <span>über 2000 gelistete Kryptowährungen</span> und die Anzahl
-            wächst stetig.
-          </p>
-        </div>
-
-        <div data-aos="fade-up">
-          <h2>Liste der ersten Kryptowährungen</h2>
-          <ul>
-            <li>Bitcoin: 2009</li>
-            <li>Litecoin: 2011</li>
-            <li>Bytecoin: 2012</li>
-            <li>Ripple: 2013</li>
-            <li>Dogecoin: 2013</li>
-            <li>Dash: 2014</li>
-            <li>Ethereum: 2015</li>
-          </ul>
-        </div>
-
-        <div data-aos="fade-up">
-          <h2>Was genau ist eine Kryptowährung?</h2>
-          <p>Eine Kryptowährung ist also eine ausschließlich digitale Währung. Doch was bedeuted das eigentlich genau?
-            Kryptowährungen basieren auf einem <span>dezentral organisierten Buchungssystem</span>. Dieses System wird von den Teilnehmern
-            gemeinsam verwaltet, indem die Transaktionen in einer Datenbank verzeichnet werden. Vorteil hierbei ist, dass das System
-            keinen geographischen Beschränkungen unterliegt und somit landesübergreifend genutzt werden kann. Um die Funktionsweise
-            von Kryptowährugen allerdings genauer zu verstehen, muss man sich das Konzept der <span>Blockchain</span> anschauen.
-          </p>
-        </div>
-
-      </div>
-    </section>
-
-    <section id="blockchain">
-
-      <h1><i class="far fa-square"></i>Blockchain</h1>
-
-      <div class="grid-container">
-
-            <div data-aos="fade-up">
-              <h2>Was ist eine Blockchain?</h2>
-              <p>Eine Blockchain ist eine <span>kontinuierlich erweiterbare Liste von Datensätzen</span>,
-                auch "Blöcke" genannt, welche mittels kryptographischer Verfahren miteinander
-                verkettet sind. Einfacher ausgedrückt ist die Blockchain eine Datenbank, in der
-                im Beispiel von Bitcoin, alle Bitcoin-Transaktionen verzeichnet sind. Man kann sich
-                dies wie ein <span>Buchungssystem</span> vorstellen, in dem alle getätigten Transaktionen vermerkt
-                werden.
-              </p>
-            </div>
-
-            <div data-aos="fade-up">
-              <h2>Transaktionen</h2>
-              <p>Transaktionen beschreiben im Bitcoin Netzwerk einen <span>Transfer eines Betrages</span> zwischen Bitcoin-Wallets,
-                der in die Blockchain eingetragen wird. Ein Bitcoin Wallet enthält hierbei alle Informationen,
-                die für den Zugriff auf die Bitcoin Blockchain benötigt werden. Möchte Person A also Geld an Person B überweisen,
-                so wird diese Transaktion mit dem spezifischen <span>Private key</span> von Person A signiert, um zu verifizieren,
-                dass die Transaktion auch wirklich von Person A getätigt wurde.
-              </p>
-            </div>
-
-      </div>
-
-      <div class="margin-container">
-
-        <h2>Ablauf einer Transaktion</h2>
-
-        <div class="transaction-procedure">
-
-          <div class="transaction" data-aos="fade-up">
-            <h3>1.</h3>
-            <i class="far fa-user"></i>
-            <p>Tom möchte Bill Geld überweisen.</p>
-          </div>
-
-          <div class="transaction" data-aos="fade-up">
-            <h3>2.</h3>
-            <i class="far fa-paper-plane"></i>
-            <p>Die getätigte Transaktion wird an das Netzwerk gesendet.</p>
-          </div>
-
-          <div class="transaction" data-aos="fade-up">
-            <h3>3.</h3>
-            <i class="fas fa-cube"></i>
-            <p>Die Transaktion wird einem Datenblock hinzugefügt.</p>
-          </div>
-
-          <div class="transaction" data-aos="fade-up">
-            <h3>4.</h3>
-            <i class="fas fa-shield-alt"></i>
-            <p>Der Block wird mit Hilfe von Verschlüsselungstechniken vom Netzwerk validiert.</p>
-          </div>
-
-          <div class="transaction" data-aos="fade-up">
-            <h3>5.</h3>
-            <i class="fas fa-link"></i>
-            <p>Der validierte Block wird der Blockchain hinzugefügt.</p>
-          </div>
-
-          <div class="transaction" data-aos="fade-up">
-            <h3>6.</h3>
-            <i class="far fa-money-bill-alt"></i>
-            <p>Bill erhält das Geld.</p>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="grid-container">
-
-        <div data-aos="fade-up">
-          <h2>Bestandteile eines Blocks</h2>
-          <p>Im Kontext der Blockchain ist die Rede von sogenannten "Blöcken", die der Blockchain angehängt werden.
-            Doch was sind die Bestandteile eines solchen Blocks? Zunächst einmal enthält ein Block einen <span>kryptographisch
-            sicheren Hash des vorhergehenden Blocks</span>. Daher auch der Name "Blockchain". Weiterhin enthält ein Block verschiedene
-            <span>Transaktionen</span>, die in dem Netzwerk durchgeführt wurden. Mit Anhängen des Blocks an die Blockchain, werden diese Transaktionen bestätigt.
-          </p>
-        </div>
-
-        <div data-aos="fade-up">
-          <h2>Konsens</h2>
-          <p>Die Blockchain wird <span>NICHT</span> zentral gespeichert, sondern als verteiltes Register geführt.
-            Alle Beteiligten speichern somit eine eigene Kopie. Alle Transaktionen werden von Teilnehmern
-            des Netzwerks bestätigt. Es gibt somit <span>keine zentrale Instanz</span>, die diese Aufgabe übernimmt.
-            Da jeder Teilnehmer eine eigene Kopie der Blockchain verwaltet, muss sich unter den Teilnehmern
-            in diesem dezentralen Netzwerk auf eine identische Version der Blockchain geeinigt werden. Hierfür
-            kommen sogenannte <span>Konsensmechanismen</span> zum Einsatz. Einer von diesen ist Proof-of-Work, welcher im
-            nächsten Abschnitt näher erläutert wird.
-          </p>
-        </div>
-
-      </div>
-
-      <div class="blockchain-showcase-wrapper">
-
-        <h2>Veranschaulichung Blockchain</h2>
-
-        <div class="blockchain-showcase" data-aos="fade-up">
-
-          <div class="block">
-            <div class="block-head">
-              <p>Previous hash</p>
-            </div>
-            <div class="block-body">
-              <p>Anna zahlt Peter 17</p>
-              <p>Hans zahlt Jörg 20</p>
-              <p>Karin zahlt Tom 3</p>
-            </div>
-            <div class="block-footer">
-              <p>Proof of Work</p>
-            </div>
-          </div>
-
-          <div class="line"></div>
-
-          <div class="block">
-            <div class="block-head">
-              <p>Previous hash</p>
-            </div>
-            <div class="block-body">
-              <p>Tom zahlt Bill 5</p>
-              <p>Peter zahlt Thomas 10</p>
-              <p>Lisa zahlt Anne 7</p>
-            </div>
-            <div class="block-footer">
-              <p>Proof of Work</p>
-            </div>
-          </div>
-
-          <div class="line"></div>
-
-          <div class="block">
-            <div class="block-head">
-              <p>Previous hash</p>
-            </div>
-            <div class="block-body">
-              <p>Sam zahlt John 38</p>
-              <p>Jan zahlt Kevin 45</p>
-              <p>Kim zahlt Pete 21</p>
-            </div>
-            <div class="block-footer">
-              <p>Proof of Work</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </section>
-
-    <section id="proof-of-work">
-
-      <h1><i class="fas fa-hammer"></i>Proof of Work</h1>
-
-      <div class="grid-container">
-
-        <div data-aos="fade-up">
-          <h2>Allgemein</h2>
-          <p>Proof of Work ist ein <span>Konsensmechanismus</span>, um sich in einem dezentralen Netzwerk
-            auf eine <span>identische Version</span> der Blockchain zu einigen. Das Prinzip von Proof-of-Work
-            basiert darauf, dass Miner in einem Netzwerk nachweisen müssen, dass ein bestimmter
-            Aufwand erbracht wurde, um einen neuen Block zu erzeugen und die darin enthaltenen
-            Transaktionen zu bestätigen.
-          </p>
-        </div>
-
-        <div data-aos="fade-up">
-          <h2>Wofür Proof of Work?</h2>
-          <p>Die Verwendung von Proof of Work stellt fundamentale Prinzipen von Kryptowährungen sicher:</p>
-          <br>
-          <p>1. Stellt klar, welche Blockchain die richtige ist: Nämlich die, in welche die meiste Rechenkapazität
-          geflossen ist.</p>
-          <p>2. <span>Sichert das Netzwerk</span> vor potentiellen Angreifern. Diese müssten mehr Energie aufwenden, als alle anderen
-          Miner insgesamt zur Verfügung haben.</p>
-          <p>3. Sichert das algorithmische Geldmengenwachstum.</p>
-        </div>
-
-      </div>
-
-      <div>
-
-        <div class="margin-container" data-aos="fade-up">
-          <h2>Funktionsweise</h2>
-
-          <p>Das Durchführen des Proof-of-Work-Mechanismus wird im Zusammenhang mit der Blockchain
-            auch als <span>"Mining"</span> bezeichnet. Wie funktioniert das Minen von Bitcoins also genau?
-          </p>
-
-          <div class="grid-container">
-            <div>
-              <h3>Ablauf</h3>
-              <p>1. Miner sammeln ausstehende Transaktionen.</p>
-              <p>2. Transaktionen werden zusammengefügt in einen Block.</p>
-              <p>3. Miner lösen Rechenaufgabe, um Transaktionen zu bestätigen.</p>
-              <p>4. Der erste Miner, der die Rechenaufgabe löst, erhält Belohnung.</p>
-              <p>5. Block wird der Blockchain hinzugefügt.</p>
-            </div>
-
-            <div>
-              <h3>Zusammenfassung</h3>
-              <p>
-                Das Ziel des Mining ist also eine <span>Rechenaufgabe schneller als alle
-                anderen Miner zu lösen</span>, um so einen Block mit Transaktionen der Blockchain
-                hinzufügen zu dürfen, und dafür eine <span>Belohnung in Form von Bitcoin</span> zu erhalten.
-                Die Belohnung setzt sich aus dem Blockanteil und den Transaktionsgebühren zusammen.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="margin-container" data-aos="fade-up">
-          <h2>Noch immer nicht ganz klar?</h2>
-          <p>
-            <i class="fas fa-angle-double-right"></i>
-            Getätigte Transaktion über das Bitcoin Netzwerk müssen von Minern <span>verifiziert</span> werden. Eine Transaktion gilt als bestätigt, wenn sie in einem
-            Block der Blockchain hinzugefügt wurde.
-          </p>
-          <br>
-          <p>
-            <i class="fas fa-angle-double-right"></i>
-            Um einen Block mit verifizierten Transaktionen der Blockchain hinzuzufügen, muss eine zeitaufwendige <span>Rechenaufgabe</span> gelöst werden.
-          </p>
-          <br>
-          <p>
-            <i class="fas fa-angle-double-right"></i>
-            Im Fall von Bitcoin dauert es circa 10 Minuten diese Rechenaufgabe zu lösen.
-            Daraus ergibt sich, dass lediglich alle <span>10 Minuten</span> ein neuer Block der Blockchain hinzugefügt wird.
-          </p>
-          <br>
-          <p>
-            <i class="fas fa-angle-double-right"></i>
-            Alle Miner arbeiten <span>gleichzeitig</span> an der Lösung dieser Rechenaufgabe.
-          </p>
-          <br>
-          <p>
-            <i class="fas fa-angle-double-right"></i>
-            Derjenige, der die Aufgabe am schnellsten löst, erhält eine <span>Belohnung</span> in Form von Bitcoins.
-          </p>
-        </div>
-
-      </div>
-
-    </section>
-
-    <section id="smart-contracts">
-      <h1><i class="fas fa-file-contract"></i>Smart Contracts</h1>
-      <div class="grid-container">
-          <div data-aos="fade-up">
-            <h2>Allgemein</h2>
-            <p>
-                Ein Smart Contract ist ein Programm, das unter <span>programmierten Konditionen</span> Krypto-Transaktionen ausführt.
-                Wenn die Konditionen eintreffen, werden die Transaktionen <span>automatisch</span> ausgeführt und dies <span>ohne zentrale Autorität</span>, die diese Transaktion erst genehmigen müsste.
-                Die Konditionen unter denen eine Transaktion ausgeführt wird, obliegen ganz dem Käufer und Verkäufer. 
-                Da Smart Contracts auf der Blockchain gespeichert werden und die Blockchain öffentlich einsehbar ist, trifft dies auch auf die Smart Contracts zu. 
-            </p>
-          </div>
-          <div data-aos="fade-up">
-            <h2>Anwendungen</h2>
-            <p>
-                Smart Contracts ermöglichen es <span>dezentralisierte Anwendungen</span> (DApps) zu entwickeln. 
-                Diese Art von Software bringt einige Vorteile mit sich.
-            </p>
-            <br>
-            <p>
-                <i class="fas fa-angle-double-right"></i>
-                DApps haben keinen Besitzer 
-            </p>
-            <br>
-            <p>
-                <i class="fas fa-angle-double-right"></i>
-                DApps sind frei von Zensur
-            </p>
-            <br>
-            <p>
-                <i class="fas fa-angle-double-right"></i>
-                DApps bieten einen anonymen Login und Nutzung
-            </p>
-          </div>
-          <div data-aos="fade-up">
-            <h2>Warum kann man Smart Contracts vertrauen?</h2>
-            <p>
-                Da Smart Contracts auf der Blockchain gespeichert werden, sind die Konditionen <span>unveränderlich</span> und der Smart Contract kann niemals manipuliert werden.
-                Eine böswillige Person hat keine Chance den Smart Contract auszuführen, da die Blockchain ein verteiltes System ist und die Smart Contracts von allen Teilnehmern des Netzwerks per <span>Konsensmechanismus</span> ausgeführt werden.
-            </p>
-          </div>
-          <div data-aos="fade-up">
-            <h2>Wie und wo kann man Smart Contracts erstellen?</h2>
-            <p>
-                Smart Contracts werden in einer Programmiersprache geschrieben, aber nicht jede Blockchain ermöglicht das Erstellen von Smart Contracts.
-                Die bekannteste Blockchain mit Unterstützung für Smart Contracts ist <span>Ethereum</span>, auf der mit der Programmiersprache <span>Solidity</span> Smart Contracts entwickelt werden können.
-                Es gibt allerdings immer mehr Möglichkeiten auch <span>ohne Programmierkenntnisse</span> Smart Contracts zu erstellen. 
-                Das geht auf der <span>Cardano</span> Blockchain mit dem
-                <span>Marlowe Playground</span> über eine grafische Benutzeroberfläche.
-            </p>
-          </div>
-      </div>
-    </section>
-
-    <section id="problems">
-      <h1><i class="fas fa-exclamation"></i>Problems</h1>
-        <div class="grid-container">
-          <div data-aos="fade-up">
-            <h2>Sed ut perspiciatis</h2>
-            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-              aut fugit, sed quia consequuntur magni dolores eos qui ratione
-              voluptatem sequi nesciunt. Neque porro quisquam est. Nemo enim
-              ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-              sed quia consequuntur magni dolores eos qui ratione voluptatem
-              sequi nesciunt. Neque porro quisquam est.</p>
-          </div>
-          <div data-aos="fade-up">
-            <h2>At vero eos et accusam</h2>
-            <p>Consequuntur magni dolores eos qui ratione voluptatem sequi
-              nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
-              sit amet, consectetur, adipisci velit, sed quia non numquam.
-              Consequuntur magni dolores eos qui ratione voluptatem sequi
-              nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
-              sit amet, consectetur, adipisci velit, sed quia non numquam.</p>
-          </div>
-
-
-          <div data-aos="fade-up">
-            <h2>Stet clita kasd gubergren</h2>
-            <p>Amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi. Amet,
-              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco laboris nisi.</p>
-          </div>
-          <div data-aos="fade-up">
-            <h2>Lorem ipsum dolor</h2>
-            <p>Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-              est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-              velit, sed quia non numquam eius modi tempora. Eos qui ratione
-              voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-              ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
-              non numquam eius modi tempora.</p>
-          </div>
-        </div>
-    </section>
-
-    <section id="proof-of-stake">
-      <h1><i class="fas fa-percent"></i>Proof of Stake</h1>
-      <div class="grid-container">
-          <div data-aos="fade-up">
-            <h2>Sed ut perspiciatis</h2>
-            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-              aut fugit, sed quia consequuntur magni dolores eos qui ratione
-              voluptatem sequi nesciunt. Neque porro quisquam est. Nemo enim
-              ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-              sed quia consequuntur magni dolores eos qui ratione voluptatem
-              sequi nesciunt. Neque porro quisquam est.</p>
-          </div>
-          <div data-aos="fade-up">
-            <h2>At vero eos et accusam</h2>
-            <p>Consequuntur magni dolores eos qui ratione voluptatem sequi
-              nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
-              sit amet, consectetur, adipisci velit, sed quia non numquam.
-              Consequuntur magni dolores eos qui ratione voluptatem sequi
-              nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
-              sit amet, consectetur, adipisci velit, sed quia non numquam.</p>
-          </div>
-
-
-          <div data-aos="fade-up">
-            <h2>Stet clita kasd gubergren</h2>
-            <p>Amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi. Amet,
-              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco laboris nisi.</p>
-          </div>
-          <div data-aos="fade-up">
-            <h2>Lorem ipsum dolor</h2>
-            <p>Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-              est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-              velit, sed quia non numquam eius modi tempora. Eos qui ratione
-              voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-              ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
-              non numquam eius modi tempora.</p>
-          </div>
-      </div>
-    </section>
-
-    <section id="summary">
-      <h1><i class="fas fa-angle-double-right"></i>Summary</h1>
-        <div class="grid-container">
-          <div data-aos="fade-up">
-            <h2>Sed ut perspiciatis</h2>
-            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-              aut fugit, sed quia consequuntur magni dolores eos qui ratione
-              voluptatem sequi nesciunt. Neque porro quisquam est. Nemo enim
-              ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-              sed quia consequuntur magni dolores eos qui ratione voluptatem
-              sequi nesciunt. Neque porro quisquam est.</p>
-          </div>
-          <div data-aos="fade-up">
-            <h2>At vero eos et accusam</h2>
-            <p>Consequuntur magni dolores eos qui ratione voluptatem sequi
-              nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
-              sit amet, consectetur, adipisci velit, sed quia non numquam.
-              Consequuntur magni dolores eos qui ratione voluptatem sequi
-              nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
-              sit amet, consectetur, adipisci velit, sed quia non numquam.</p>
-          </div>
-
-
-          <div data-aos="fade-up">
-            <h2>Stet clita kasd gubergren</h2>
-            <p>Amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi. Amet,
-              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco laboris nisi.</p>
-          </div>
-          <div data-aos="fade-up">
-            <h2>Lorem ipsum dolor</h2>
-            <p>Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-              est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-              velit, sed quia non numquam eius modi tempora. Eos qui ratione
-              voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-              ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
-              non numquam eius modi tempora.</p>
-          </div>
-        </div>
-    </section>
-
-  </main>
-
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+		/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Simple Crypto</title>
+		<link
+			href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+			rel="stylesheet"
+		/>
+		<link
+			rel="shortcut icon"
+			href="src/assets/favicon.ico"
+			type="image/x-icon"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+			integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+			crossorigin="anonymous"
+		/>
+		<script src="src/js/main.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<div class="burger-menu">
+				<img
+					src="src/assets/menu.svg"
+					id="burger-menu-icon"
+					alt="burger menu icon"
+				/>
+				<img
+					src="src/assets/x.svg"
+					id="burger-menu-icon-close"
+					alt="close icon"
+				/>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#how-it-all-began">How it all began</a></li>
+					<li><a href="#blockchain">Blockchain</a></li>
+					<li><a href="#proof-of-work">Proof of Work</a></li>
+					<li><a href="#smart-contracts">Smart Contracts</a></li>
+					<li><a href="#problems">Problems</a></li>
+					<li><a href="#proof-of-stake">Proof of Stake</a></li>
+					<li><a href="#summary">Summary</a></li>
+				</ul>
+			</nav>
+			<div class="progress-container">
+				<div class="progress-bar" id="bar"></div>
+			</div>
+		</header>
+
+		<main>
+			<section id="how-it-all-began">
+				<div class="home-container" data-aos="fade-up">
+					<div class="home-text">
+						<h1><span>S</span>imple <span>C</span>rypto</h1>
+						<p>
+							An Begriffen wie Kryptowährung oder Bitcoin kommt
+							man in der heutigen Zeit kaum noch vorbei. Aber was
+							verbirgt sich eigentlich genau dahinter? Wie
+							funktionieren Kryptowährungen und was haben sie mit
+							Umwelt und Energieverbrauch zu tun?
+						</p>
+					</div>
+					<img src="src/assets/home.svg" alt="Home" />
+				</div>
+
+				<h1><i class="fas fa-history"></i>How it all began</h1>
+
+				<div class="grid-container">
+					<div data-aos="fade-up">
+						<h2>Die Anfänge</h2>
+						<p>
+							Die Begriffe Kryptowährung und Bitcoin gehen Hand in
+							Hand. Und dies hat einen guten Grund. Bitcoin war
+							die erste digitale Währung und ist auch bis heute
+							die mit Abstand bekannteste. Das Konzept für die
+							Währung wurde im Jahr 2008 von
+							<span>Satoshi Nakamoto</span> entwickelt. Die ersten
+							Ideen einer ausschließlich digitalen Währung reichen
+							jedoch weiter zurück. Im Jahr 1998 wurde von Nick
+							Szabo bereits ein Mechanismus für eine dezentrale
+							digitale Währung, namens "bit gold" entworfen. Diese
+							wurde jedoch nie implementiert, gilt allerdings
+							gleichhin als direkter Vorläufer der Bitcoin
+							Architektur.
+						</p>
+					</div>
+
+					<div data-aos="fade-up">
+						<h2>Entwicklung</h2>
+						<p>
+							Mit der Veröffentlichung des Bitcoin Netzwerkes im
+							Jahre 2009 fiel der Startschuss für den Markt der
+							Kryptowährungen. Es sollte jedoch noch einige Jahre
+							dauern, bis der Hype um die Währungen ein nie
+							erwartetes Hoch erreicht. Während bis 2014 nur sehr
+							wenige Kryptowährungen existierten, so nahm der Hype
+							um Krypto ab 2015 langsam Fahrt auf. Mittlerweile
+							gibt es
+							<span>über 2000 gelistete Kryptowährungen</span> und
+							die Anzahl wächst stetig.
+						</p>
+					</div>
+
+					<div data-aos="fade-up">
+						<h2>Liste der ersten Kryptowährungen</h2>
+						<ul>
+							<li>Bitcoin: 2009</li>
+							<li>Litecoin: 2011</li>
+							<li>Bytecoin: 2012</li>
+							<li>Ripple: 2013</li>
+							<li>Dogecoin: 2013</li>
+							<li>Dash: 2014</li>
+							<li>Ethereum: 2015</li>
+						</ul>
+					</div>
+
+					<div data-aos="fade-up">
+						<h2>Was genau ist eine Kryptowährung?</h2>
+						<p>
+							Eine Kryptowährung ist also eine ausschließlich
+							digitale Währung. Doch was bedeuted das eigentlich
+							genau? Kryptowährungen basieren auf einem
+							<span>dezentral organisierten Buchungssystem</span>.
+							Dieses System wird von den Teilnehmern gemeinsam
+							verwaltet, indem die Transaktionen in einer
+							Datenbank verzeichnet werden. Vorteil hierbei ist,
+							dass das System keinen geographischen Beschränkungen
+							unterliegt und somit landesübergreifend genutzt
+							werden kann. Um die Funktionsweise von
+							Kryptowährugen allerdings genauer zu verstehen, muss
+							man sich das Konzept der
+							<span>Blockchain</span> anschauen.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section id="blockchain">
+				<h1><i class="far fa-square"></i>Blockchain</h1>
+
+				<div class="grid-container">
+					<div data-aos="fade-up">
+						<h2>Was ist eine Blockchain?</h2>
+						<p>
+							Eine Blockchain ist eine
+							<span
+								>kontinuierlich erweiterbare Liste von
+								Datensätzen</span
+							>, auch "Blöcke" genannt, welche mittels
+							kryptographischer Verfahren miteinander verkettet
+							sind. Einfacher ausgedrückt ist die Blockchain eine
+							Datenbank, in der im Beispiel von Bitcoin, alle
+							Bitcoin-Transaktionen verzeichnet sind. Man kann
+							sich dies wie ein
+							<span>Buchungssystem</span> vorstellen, in dem alle
+							getätigten Transaktionen vermerkt werden.
+						</p>
+					</div>
+
+					<div data-aos="fade-up">
+						<h2>Transaktionen</h2>
+						<p>
+							Transaktionen beschreiben im Bitcoin Netzwerk einen
+							<span>Transfer eines Betrages</span> zwischen
+							Bitcoin-Wallets, der in die Blockchain eingetragen
+							wird. Ein Bitcoin Wallet enthält hierbei alle
+							Informationen, die für den Zugriff auf die Bitcoin
+							Blockchain benötigt werden. Möchte Person A also
+							Geld an Person B überweisen, so wird diese
+							Transaktion mit dem spezifischen
+							<span>Private key</span> von Person A signiert, um
+							zu verifizieren, dass die Transaktion auch wirklich
+							von Person A getätigt wurde.
+						</p>
+					</div>
+				</div>
+
+				<div class="margin-container">
+					<h2>Ablauf einer Transaktion</h2>
+
+					<div class="transaction-procedure">
+						<div class="transaction" data-aos="fade-up">
+							<h3>1.</h3>
+							<i class="far fa-user"></i>
+							<p>Tom möchte Bill Geld überweisen.</p>
+						</div>
+
+						<div class="transaction" data-aos="fade-up">
+							<h3>2.</h3>
+							<i class="far fa-paper-plane"></i>
+							<p>
+								Die getätigte Transaktion wird an das Netzwerk
+								gesendet.
+							</p>
+						</div>
+
+						<div class="transaction" data-aos="fade-up">
+							<h3>3.</h3>
+							<i class="fas fa-cube"></i>
+							<p>
+								Die Transaktion wird einem Datenblock
+								hinzugefügt.
+							</p>
+						</div>
+
+						<div class="transaction" data-aos="fade-up">
+							<h3>4.</h3>
+							<i class="fas fa-shield-alt"></i>
+							<p>
+								Der Block wird mit Hilfe von
+								Verschlüsselungstechniken vom Netzwerk
+								validiert.
+							</p>
+						</div>
+
+						<div class="transaction" data-aos="fade-up">
+							<h3>5.</h3>
+							<i class="fas fa-link"></i>
+							<p>
+								Der validierte Block wird der Blockchain
+								hinzugefügt.
+							</p>
+						</div>
+
+						<div class="transaction" data-aos="fade-up">
+							<h3>6.</h3>
+							<i class="far fa-money-bill-alt"></i>
+							<p>Bill erhält das Geld.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="grid-container">
+					<div data-aos="fade-up">
+						<h2>Bestandteile eines Blocks</h2>
+						<p>
+							Im Kontext der Blockchain ist die Rede von
+							sogenannten "Blöcken", die der Blockchain angehängt
+							werden. Doch was sind die Bestandteile eines solchen
+							Blocks? Zunächst einmal enthält ein Block einen
+							<span
+								>kryptographisch sicheren Hash des
+								vorhergehenden Blocks</span
+							>. Daher auch der Name "Blockchain". Weiterhin
+							enthält ein Block verschiedene
+							<span>Transaktionen</span>, die in dem Netzwerk
+							durchgeführt wurden. Mit Anhängen des Blocks an die
+							Blockchain, werden diese Transaktionen bestätigt.
+						</p>
+					</div>
+
+					<div data-aos="fade-up">
+						<h2>Konsens</h2>
+						<p>
+							Die Blockchain wird <span>NICHT</span> zentral
+							gespeichert, sondern als verteiltes Register
+							geführt. Alle Beteiligten speichern somit eine
+							eigene Kopie. Alle Transaktionen werden von
+							Teilnehmern des Netzwerks bestätigt. Es gibt somit
+							<span>keine zentrale Instanz</span>, die diese
+							Aufgabe übernimmt. Da jeder Teilnehmer eine eigene
+							Kopie der Blockchain verwaltet, muss sich unter den
+							Teilnehmern in diesem dezentralen Netzwerk auf eine
+							identische Version der Blockchain geeinigt werden.
+							Hierfür kommen sogenannte
+							<span>Konsensmechanismen</span> zum Einsatz. Einer
+							von diesen ist Proof-of-Work, welcher im nächsten
+							Abschnitt näher erläutert wird.
+						</p>
+					</div>
+				</div>
+
+				<div class="blockchain-showcase-wrapper">
+					<h2>Veranschaulichung Blockchain</h2>
+
+					<div class="blockchain-showcase" data-aos="fade-up">
+						<div class="block">
+							<div class="block-head">
+								<p>Previous hash</p>
+							</div>
+							<div class="block-body">
+								<p>Anna zahlt Peter 17</p>
+								<p>Hans zahlt Jörg 20</p>
+								<p>Karin zahlt Tom 3</p>
+							</div>
+							<div class="block-footer">
+								<p>Proof of Work</p>
+							</div>
+						</div>
+
+						<div class="line"></div>
+
+						<div class="block">
+							<div class="block-head">
+								<p>Previous hash</p>
+							</div>
+							<div class="block-body">
+								<p>Tom zahlt Bill 5</p>
+								<p>Peter zahlt Thomas 10</p>
+								<p>Lisa zahlt Anne 7</p>
+							</div>
+							<div class="block-footer">
+								<p>Proof of Work</p>
+							</div>
+						</div>
+
+						<div class="line"></div>
+
+						<div class="block">
+							<div class="block-head">
+								<p>Previous hash</p>
+							</div>
+							<div class="block-body">
+								<p>Sam zahlt John 38</p>
+								<p>Jan zahlt Kevin 45</p>
+								<p>Kim zahlt Pete 21</p>
+							</div>
+							<div class="block-footer">
+								<p>Proof of Work</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="proof-of-work">
+				<h1><i class="fas fa-hammer"></i>Proof of Work</h1>
+
+				<div class="grid-container">
+					<div data-aos="fade-up">
+						<h2>Allgemein</h2>
+						<p>
+							Proof of Work ist ein
+							<span>Konsensmechanismus</span>, um sich in einem
+							dezentralen Netzwerk auf eine
+							<span>identische Version</span> der Blockchain zu
+							einigen. Das Prinzip von Proof-of-Work basiert
+							darauf, dass Miner in einem Netzwerk nachweisen
+							müssen, dass ein bestimmter Aufwand erbracht wurde,
+							um einen neuen Block zu erzeugen und die darin
+							enthaltenen Transaktionen zu bestätigen.
+						</p>
+					</div>
+
+					<div data-aos="fade-up">
+						<h2>Wofür Proof of Work?</h2>
+						<p>
+							Die Verwendung von Proof of Work stellt fundamentale
+							Prinzipen von Kryptowährungen sicher:
+						</p>
+						<br />
+						<p>
+							1. Stellt klar, welche Blockchain die richtige ist:
+							Nämlich die, in welche die meiste Rechenkapazität
+							geflossen ist.
+						</p>
+						<p>
+							2. <span>Sichert das Netzwerk</span> vor
+							potentiellen Angreifern. Diese müssten mehr Energie
+							aufwenden, als alle anderen Miner insgesamt zur
+							Verfügung haben.
+						</p>
+						<p>3. Sichert das algorithmische Geldmengenwachstum.</p>
+					</div>
+				</div>
+
+				<div>
+					<div class="margin-container" data-aos="fade-up">
+						<h2>Funktionsweise</h2>
+
+						<p>
+							Das Durchführen des Proof-of-Work-Mechanismus wird
+							im Zusammenhang mit der Blockchain auch als
+							<span>"Mining"</span> bezeichnet. Wie funktioniert
+							das Minen von Bitcoins also genau?
+						</p>
+
+						<div class="grid-container">
+							<div>
+								<h3>Ablauf</h3>
+								<p>
+									1. Miner sammeln ausstehende Transaktionen.
+								</p>
+								<p>
+									2. Transaktionen werden zusammengefügt in
+									einen Block.
+								</p>
+								<p>
+									3. Miner lösen Rechenaufgabe, um
+									Transaktionen zu bestätigen.
+								</p>
+								<p>
+									4. Der erste Miner, der die Rechenaufgabe
+									löst, erhält Belohnung.
+								</p>
+								<p>5. Block wird der Blockchain hinzugefügt.</p>
+							</div>
+
+							<div>
+								<h3>Zusammenfassung</h3>
+								<p>
+									Das Ziel des Mining ist also eine
+									<span
+										>Rechenaufgabe schneller als alle
+										anderen Miner zu lösen</span
+									>, um so einen Block mit Transaktionen der
+									Blockchain hinzufügen zu dürfen, und dafür
+									eine
+									<span>Belohnung in Form von Bitcoin</span>
+									zu erhalten. Die Belohnung setzt sich aus
+									dem Blockanteil und den Transaktionsgebühren
+									zusammen.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="margin-container" data-aos="fade-up">
+						<h2>Noch immer nicht ganz klar?</h2>
+						<p>
+							<i class="fas fa-angle-double-right"></i>
+							Getätigte Transaktion über das Bitcoin Netzwerk
+							müssen von Minern <span>verifiziert</span> werden.
+							Eine Transaktion gilt als bestätigt, wenn sie in
+							einem Block der Blockchain hinzugefügt wurde.
+						</p>
+						<br />
+						<p>
+							<i class="fas fa-angle-double-right"></i>
+							Um einen Block mit verifizierten Transaktionen der
+							Blockchain hinzuzufügen, muss eine zeitaufwendige
+							<span>Rechenaufgabe</span> gelöst werden.
+						</p>
+						<br />
+						<p>
+							<i class="fas fa-angle-double-right"></i>
+							Im Fall von Bitcoin dauert es circa 10 Minuten diese
+							Rechenaufgabe zu lösen. Daraus ergibt sich, dass
+							lediglich alle <span>10 Minuten</span> ein neuer
+							Block der Blockchain hinzugefügt wird.
+						</p>
+						<br />
+						<p>
+							<i class="fas fa-angle-double-right"></i>
+							Alle Miner arbeiten <span>gleichzeitig</span> an der
+							Lösung dieser Rechenaufgabe.
+						</p>
+						<br />
+						<p>
+							<i class="fas fa-angle-double-right"></i>
+							Derjenige, der die Aufgabe am schnellsten löst,
+							erhält eine <span>Belohnung</span> in Form von
+							Bitcoins.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section id="smart-contracts">
+				<h1><i class="fas fa-file-contract"></i>Smart Contracts</h1>
+				<div class="grid-container">
+					<div data-aos="fade-up">
+						<h2>Allgemein</h2>
+						<p>
+							Ein Smart Contract ist ein Programm, das unter
+							<span>programmierten Konditionen</span>
+							Krypto-Transaktionen ausführt. Wenn die Konditionen
+							eintreffen, werden die Transaktionen
+							<span>automatisch</span> ausgeführt und dies
+							<span>ohne zentrale Autorität</span>, die diese
+							Transaktion erst genehmigen müsste. Die Konditionen
+							unter denen eine Transaktion ausgeführt wird,
+							obliegen ganz dem Käufer und Verkäufer. Da Smart
+							Contracts auf der Blockchain gespeichert werden und
+							die Blockchain öffentlich einsehbar ist, trifft dies
+							auch auf die Smart Contracts zu.
+						</p>
+					</div>
+					<div data-aos="fade-up">
+						<h2>Anwendungen</h2>
+						<p>
+							Smart Contracts ermöglichen es
+							<span>dezentralisierte Anwendungen</span> (DApps) zu
+							entwickeln. Diese Art von Software bringt einige
+							Vorteile mit sich.
+						</p>
+						<br />
+						<p>
+							<i class="fas fa-angle-double-right"></i>
+							DApps haben keinen Besitzer
+						</p>
+						<br />
+						<p>
+							<i class="fas fa-angle-double-right"></i>
+							DApps sind frei von Zensur
+						</p>
+						<br />
+						<p>
+							<i class="fas fa-angle-double-right"></i>
+							DApps bieten einen anonymen Login und Nutzung
+						</p>
+					</div>
+					<div data-aos="fade-up">
+						<h2>Warum kann man Smart Contracts vertrauen?</h2>
+						<p>
+							Da Smart Contracts auf der Blockchain gespeichert
+							werden, sind die Konditionen
+							<span>unveränderlich</span> und der Smart Contract
+							kann niemals manipuliert werden. Eine böswillige
+							Person hat keine Chance den Smart Contract
+							auszuführen, da die Blockchain ein verteiltes System
+							ist und die Smart Contracts von allen Teilnehmern
+							des Netzwerks per
+							<span>Konsensmechanismus</span> ausgeführt werden.
+						</p>
+					</div>
+					<div data-aos="fade-up">
+						<h2>Wie und wo kann man Smart Contracts erstellen?</h2>
+						<p>
+							Smart Contracts werden in einer Programmiersprache
+							geschrieben, aber nicht jede Blockchain ermöglicht
+							das Erstellen von Smart Contracts. Die bekannteste
+							Blockchain mit Unterstützung für Smart Contracts ist
+							<span>Ethereum</span>, auf der mit der
+							Programmiersprache <span>Solidity</span> Smart
+							Contracts entwickelt werden können. Es gibt
+							allerdings immer mehr Möglichkeiten auch
+							<span>ohne Programmierkenntnisse</span> Smart
+							Contracts zu erstellen. Das geht auf der
+							<span>Cardano</span> Blockchain mit dem
+							<span>Marlowe Playground</span> über eine grafische
+							Benutzeroberfläche.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section id="problems">
+				<h1><i class="fas fa-exclamation"></i>Problems</h1>
+				<div class="grid-container">
+					<div data-aos="fade-up">
+						<h2>Nachhaltigkeit</h2>
+						<p>
+							Das <span>Minen</span> von Kryptowährungen, die dem
+							Proof of Work Konsensmechanismus unterliegen
+							verbraucht sehr große Mengen an Energie. So wird
+							<span>Bitcoins</span> aktueller jährlicher
+							Energieverbrauch auf
+							<span>über 134 TWh</span> geschätzt. Das entspricht
+							dem Energieverbrauch eines mittelgroßen Landes wie
+							<span>Argentinien</span>. Eine einzelne Transaktion
+							mit Bitcoin auszuführen verbraucht über 1700 kWh,
+							soviel verbraucht ein durchschnittlicher US-Haushalt
+							in 2 Monaten. Für <span>Ethereum</span> sieht es
+							nicht viel besser aus, auch dessen Energieverbrauch
+							wird auf <span>54 TWh</span> geschätzt und ist
+							vergleichbar mit <span>Griechenland</span>. Eine
+							Transaktion auf Ethereum auszuführen verbraucht über
+							120 kWh an Energie, ein US-Haushalt verbraucht
+							innerhalb von 4 Tagen weniger Energie.
+						</p>
+					</div>
+					<div data-aos="fade-up">
+						<h2>Skalierbarkeit</h2>
+						<p>
+							Je mehr Transaktionen auf dem Bitcoin oder Ethereum
+							Netzwerk getätigt werden, umso länger dauert es
+							diese Transaktionen von Minern verifizieren zu
+							lassen und umso höher sind auch die
+							<span>Transaktionsgebühren</span>, die für die Miner
+							fällig werden. So war es es nicht unüblich, dass
+							eine Transaktion auf Ethereum im Mai 2021 erst nach
+							Stunden verifiziert wurde und
+							<span>über 500€ an Transaktionsgebühren</span>
+							kostete. Die einzige Möglichkeit ein auf Proof of
+							Work basierendes Netzwerk zu skalieren, ist es,
+							bessere und teurere Hardware zu verwenden, was den
+							Stromverbrauch und die Transaktionsgebühren
+							<span>exponentiell</span> steigen lässt.
+						</p>
+					</div>
+
+					<div data-aos="fade-up">
+						<h2>Zentralisierung</h2>
+						<p>
+							Der Energieverbrauch von Bitcoin und Ethereum stieg
+							in den letzten Jahren raketenhaft an. Je mehr
+							Menschen sich an dem Mining beteiligen, desto
+							schwieriger wird es sich in dem Wettkampf um den
+							Block durchzusetzen und die
+							<span>Anforderungen an die Hardware steigen</span>.
+							In Bitcoins Anfangszeiten war es noch möglich mit
+							einer herkömmlichen CPU Transaktionen zu
+							verifizieren. Mittlerweile ist das nur noch mit
+							anwendungsspezifischen integrierten Schaltungen,
+							sogenannten <span>ASIC-Minern</span>, profitabel.
+							Durch die ansteigende Schwierigkeit beim Minen
+							schließen sich immer mehr Miner zu
+							<span>Pools</span> zusammen. Die Bedingung auf ASIC
+							Hardware zurückzugreifen ist ebenso eine
+							<span>Triebkraft für Zentralisierung</span>, da
+							diese Geräte sehr teuer sind und nur begrenzt
+							verfügbar. Außerdem spielt die
+							<span>geografische Lage</span> eine große Rolle auf
+							den <span>Strompreis</span> und somit die
+							Profitabiliät. Es entstehen
+							<span>Mining-Farmen</span> mit Hardware im Wert von
+							über <span>100 Millionen Euro</span>, wodurch es
+							schon jetzt ein Geschäft ist, das nur noch für
+							<span>Reiche</span> umsetzbar ist. Somit wird das
+							Netzwerk immer zentralisierter, was gegen die
+							ursprüngliche Idee von Dezentralisierung geht.
+						</p>
+					</div>
+
+					<div data-aos="fade-up">
+						<h2>Angriffsmöglichkeiten</h2>
+						<p></p>
+					</div>
+				</div>
+			</section>
+
+			<section id="proof-of-stake">
+				<h1><i class="fas fa-percent"></i>Proof of Stake</h1>
+				<div class="grid-container">
+					<div data-aos="fade-up">
+						<h2>Sed ut perspiciatis</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Deserunt harum in quidem saepe incidunt quis
+							officiis porro consequuntur odit dolor impedit
+							aspernatur quas distinctio dolores enim amet
+							deleniti unde molestiae quae, et, facilis soluta
+							molestias corporis a! Quia magni ullam delectus
+							animi earum optio soluta, dignissimos eaque laborum
+							id blanditiis.
+						</p>
+					</div>
+					<div data-aos="fade-up">
+						<h2>At vero eos et accusam</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing
+							elit. Nihil nam dicta nesciunt quos unde error
+							architecto, eligendi perferendis corrupti voluptate!
+							Iusto, deserunt mollitia repudiandae maxime iure
+							aperiam dolore repellendus necessitatibus veritatis
+							ipsum eius obcaecati explicabo aut pariatur voluptas
+							voluptates minus. Exercitationem perspiciatis
+							perferendis ipsum hic praesentium est itaque!
+							Soluta, eos?
+						</p>
+					</div>
+
+					<div data-aos="fade-up">
+						<h2>Stet clita kasd gubergren</h2>
+						<p>
+							Lorem ipsum dolor, sit amet consectetur adipisicing
+							elit. Facilis nobis placeat, amet repudiandae totam
+							optio numquam dolorum, atque cumque hic non
+							excepturi praesentium, quis tenetur quod
+							consequuntur natus repellendus officiis vel? Earum
+							magnam enim eaque quisquam vitae asperiores iure
+							reiciendis soluta facere quibusdam? Ullam hic
+							laborum iure, provident aspernatur officiis.
+						</p>
+					</div>
+					<div data-aos="fade-up">
+						<h2>Lorem ipsum dolor</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Labore adipisci maiores neque quo ea pariatur
+							nesciunt quos impedit laborum itaque corrupti
+							dignissimos at alias cum unde, eius excepturi.
+							Perferendis animi tempora, labore accusantium
+							officia facilis minima eaque quam? Minus delectus
+							repudiandae voluptatibus nisi eaque blanditiis
+							facere eius expedita dolorem error.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section id="summary">
+				<h1><i class="fas fa-angle-double-right"></i>Summary</h1>
+				<div class="grid-container">
+					<div data-aos="fade-up">
+						<h2>Sed ut perspiciatis</h2>
+						<p>
+							Nemo enim ipsam voluptatem quia voluptas sit
+							aspernatur aut odit aut fugit, sed quia consequuntur
+							magni dolores eos qui ratione voluptatem sequi
+							nesciunt. Neque porro quisquam est. Nemo enim ipsam
+							voluptatem quia voluptas sit aspernatur aut odit aut
+							fugit, sed quia consequuntur magni dolores eos qui
+							ratione voluptatem sequi nesciunt. Neque porro
+							quisquam est.
+						</p>
+					</div>
+					<div data-aos="fade-up">
+						<h2>At vero eos et accusam</h2>
+						<p>
+							Consequuntur magni dolores eos qui ratione
+							voluptatem sequi nesciunt. Neque porro quisquam est,
+							qui dolorem ipsum quia dolor sit amet, consectetur,
+							adipisci velit, sed quia non numquam. Consequuntur
+							magni dolores eos qui ratione voluptatem sequi
+							nesciunt. Neque porro quisquam est, qui dolorem
+							ipsum quia dolor sit amet, consectetur, adipisci
+							velit, sed quia non numquam.
+						</p>
+					</div>
+
+					<div data-aos="fade-up">
+						<h2>Stet clita kasd gubergren</h2>
+						<p>
+							Amet, consectetur adipiscing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.
+							Ut enim ad minim veniam, quis nostrud exercitation
+							ullamco laboris nisi. Amet, consectetur adipiscing
+							elit, sed do eiusmod tempor incididunt ut labore et
+							dolore magna aliqua. Ut enim ad minim veniam, quis
+							nostrud exercitation ullamco laboris nisi.
+						</p>
+					</div>
+					<div data-aos="fade-up">
+						<h2>Lorem ipsum dolor</h2>
+						<p>
+							Eos qui ratione voluptatem sequi nesciunt. Neque
+							porro quisquam est, qui dolorem ipsum quia dolor sit
+							amet, consectetur, adipisci velit, sed quia non
+							numquam eius modi tempora. Eos qui ratione
+							voluptatem sequi nesciunt. Neque porro quisquam est,
+							qui dolorem ipsum quia dolor sit amet, consectetur,
+							adipisci velit, sed quia non numquam eius modi
+							tempora.
+						</p>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+	</body>
 </html>
