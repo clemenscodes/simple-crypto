@@ -35,6 +35,7 @@
 				load(sa);
 				window.addEventListener("load", function () {
 					firebase.initializeApp(fbc).performance();
+					firebase.analytics();
 				});
 			})(
 				"https://www.gstatic.com/firebasejs/8.7.0/firebase-performance-standalone.js",
@@ -803,18 +804,5 @@
 		</script>
 		<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-analytics.js"></script>
-		<script>
-			const firebaseConfig = {
-				apiKey: "AIzaSyB4UzIbQFjrwvg2WgiZ7OhQwUEBwlapI10",
-				authDomain: "simple-crypto-fd0d7.firebaseapp.com",
-				projectId: "simple-crypto-fd0d7",
-				storageBucket: "simple-crypto-fd0d7.appspot.com",
-				messagingSenderId: "303423153034",
-				appId: "1:303423153034:web:d17316898f2873e5415e73",
-				measurementId: "G-F0Q6NWXMGY",
-			};
-			firebase.initializeApp(firebaseConfig);
-			firebase.analytics();
-		</script>
 	</body>
 </html>
