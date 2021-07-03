@@ -86,10 +86,10 @@
 							Ideen einer ausschließlich digitalen Währung reichen
 							jedoch weiter zurück. Im Jahr 1998 wurde von Nick
 							Szabo bereits ein Mechanismus für eine dezentrale
-							digitale Währung, namens "bit gold", entworfen. Diese
-							wurde jedoch nie implementiert, gilt allerdings
-							gleichhin als direkter Vorläufer der Bitcoin
-							Architektur.
+							digitale Währung, namens "bit gold", entworfen.
+							Diese wurde jedoch nie implementiert, gilt
+							allerdings gleichhin als direkter Vorläufer der
+							Bitcoin Architektur.
 						</p>
 					</div>
 
@@ -104,8 +104,8 @@
 							wenige Kryptowährungen existierten, so nahm der Hype
 							um Krypto ab 2015 langsam Fahrt auf. Mittlerweile
 							gibt es
-							<span>über 10000 gelistete Kryptowährungen</span> und
-							die Anzahl wächst stetig.
+							<span>über 10000 gelistete Kryptowährungen</span>
+							und die Anzahl wächst stetig.
 						</p>
 					</div>
 
@@ -135,8 +135,8 @@
 							dass das System keinen geographischen Beschränkungen
 							unterliegt und somit landesübergreifend genutzt
 							werden kann. Um die Funktionsweise von
-							Kryptowährungen allerdings genauer zu verstehen, muss
-							man sich das Konzept der
+							Kryptowährungen allerdings genauer zu verstehen,
+							muss man sich das Konzept der
 							<span>Blockchain</span> anschauen.
 						</p>
 					</div>
@@ -394,8 +394,8 @@
 									einen Block.
 								</p>
 								<p>
-									3. Miner lösen Rateaufgabe, um
-									Transaktionen zu bestätigen.
+									3. Miner lösen Rateaufgabe, um Transaktionen
+									zu bestätigen.
 								</p>
 								<p>
 									4. Der erste Miner, der die Rateaufgabe
@@ -409,8 +409,8 @@
 								<p>
 									Das Ziel des Mining ist also eine
 									<span
-										>Rateaufgabe schneller als alle
-										anderen Miner zu lösen</span
+										>Rateaufgabe schneller als alle anderen
+										Miner zu lösen</span
 									>, um so einen Block mit Transaktionen der
 									Blockchain hinzufügen zu dürfen, und dafür
 									eine
@@ -775,8 +775,23 @@
 		<script>
 			AOS.init();
 		</script>
-		<script src="/__/firebase/8.7.0/firebase-app.js"></script>
-		<script src="/__/firebase/8.7.0/firebase-analytics.js"></script>
-		<script src="/__/firebase/init.js"></script>
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+
+		<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-analytics.js"></script>
+
+		<script>
+			var firebaseConfig = {
+				apiKey: "AIzaSyB4UzIbQFjrwvg2WgiZ7OhQwUEBwlapI10",
+				authDomain: "simple-crypto-fd0d7.firebaseapp.com",
+				projectId: "simple-crypto-fd0d7",
+				storageBucket: "simple-crypto-fd0d7.appspot.com",
+				messagingSenderId: "303423153034",
+				appId: "1:303423153034:web:d17316898f2873e5415e73",
+				measurementId: "G-F0Q6NWXMGY",
+			};
+			firebase.initializeApp(firebaseConfig);
+			firebase.analytics();
+		</script>
 	</body>
 </html>
