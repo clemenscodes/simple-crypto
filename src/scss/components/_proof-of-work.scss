@@ -1,0 +1,31 @@
+.card {
+  border: 1px solid white;
+  text-align: center;
+  border-radius: 0.25rem;
+}
+.card-header {
+  padding: 1rem;
+  border-bottom: 3px solid white;
+  h4 {
+    font-size: 1.25rem;
+    color: $orange;
+  }
+}
+.card-body {
+  padding: 2rem;
+  min-height: 17.5rem;
+  h5 {
+    font-size: 1.75rem;
+  }
+  i {
+    font-size: 4rem;
+    margin: 2rem 0;
+  }
+  p {
+    color: grey;
+    span {
+      color: #e2e1e1;
+      font-weight: bold;
+    }
+  }
+}
