@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 @import './lib/variables';
 @import './lib/mixins';
+@import './components/card';
 @import './components/header';
 @import './components/home';
 @import './components/blockchain';
-@import './components/proof-of-work';
 
 * {
   box-sizing: border-box;
@@ -102,4 +102,14 @@ main {
   @include for-desktop-up {
     margin: 8rem 0;
   }
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.flex-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
 }
