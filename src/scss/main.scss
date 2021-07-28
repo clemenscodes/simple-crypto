@@ -55,6 +55,12 @@ p {
 }
 main {
   padding: 2rem 1rem;
+  @include for-tablet-portrait-up {
+    padding: 2rem 5rem;
+  }
+  @include for-tablet-landscape-up {
+    padding: 2rem 2rem;
+  }
   @include for-desktop-up {
     padding: 2rem 7rem;
   }
@@ -73,9 +79,15 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
   @include for-tablet-landscape-up {
-    grid-row-gap: 5rem;
     grid-template-columns: 1fr 1fr;
+    grid-row-gap: 3rem;
+    grid-column-gap: 3rem;
+  }
+  @include for-desktop-up {
+    grid-row-gap: 5rem;
+    grid-column-gap: 5rem;
   }
   @include for-desktop-up {
     grid-column-gap: 10rem;
